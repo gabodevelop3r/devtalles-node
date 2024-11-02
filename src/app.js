@@ -12,14 +12,20 @@
 // console.log(john);
 
 
-const { getPokemonById } = require('./js-foundation/06-promises')
+const { buildLogger } = require('./plugins')
+const logger = buildLogger('app.js');
 
-const pokemon = getPokemonById(3)
-                            .then( (pokemon) => console.log(pokemon))
-                            .catch( (error) => console.error('error',error))
+logger.log('Hello World');
+
+logger.error('Hello Error');
 
 
+// const { getPokemonById } = require('./js-foundation/06-promises')
 
-console.log(pokemon);
+// const pokemon = getPokemonById(3)
+//                             .then( (pokemon) => console.log(pokemon))
+//                             .catch( (error) => console.error('error',error))
+
+// console.table(pokemon);
 
 
