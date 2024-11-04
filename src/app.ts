@@ -1,3 +1,4 @@
+import { buildLogger } from './plugins/logger.plugin';
 
 // ! referencia a la funcion factory con injeccion de dependencias 
 
@@ -12,7 +13,7 @@
 // console.log(john);
 
 
-const { buildLogger } = require('./plugins')
+
 const logger = buildLogger('app.js');
 
 logger.log('Hello World');
@@ -27,5 +28,4 @@ logger.error('Hello Error');
 //                             .catch( (error) => console.error('error',error))
 
 // console.table(pokemon);
-
 
