@@ -1,4 +1,4 @@
-import { buildLogger } from './plugins/logger.plugin';
+// import { buildLogger } from './plugins/logger.plugin';
 
 // ! referencia a la funcion factory con injeccion de dependencias 
 
@@ -14,11 +14,11 @@ import { buildLogger } from './plugins/logger.plugin';
 
 
 
-const logger = buildLogger('app.js');
+// const logger = buildLogger('app.js');
 
-logger.log('Hello World');
+// logger.log('Hello World');
 
-logger.error('Hello Error');
+// logger.error('Hello Error');
 
 
 // const { getPokemonById } = require('./js-foundation/06-promises')
