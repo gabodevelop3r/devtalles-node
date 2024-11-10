@@ -19,9 +19,13 @@ const users: User[] = [
 
 export function getUserById ( id: number , callback:(err?:string, user?:User)=>void) {
     const user = users.find( (user) => user.id == id)
-    if (!user)
-        return callback(`User not found with id ${id}`)
-    
-    return callback(undefined, user)
+
+    setTimeout(() => {
+        
+        if (!user)
+            return callback(`User not found with id ${id}`)
+        
+        return callback(undefined, user)
+    }, 1000);
     
 }
